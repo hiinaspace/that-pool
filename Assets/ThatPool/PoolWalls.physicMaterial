@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: PoolWalls
   dynamicFriction: 0.5
   staticFriction: 0.3
-  bounciness: 0.4
+  bounciness: 0.8
   frictionCombine: 0
   bounceCombine: 0

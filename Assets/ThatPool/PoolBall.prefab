@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1939347744985526767}
   - component: {fileID: 1939347744985526765}
   - component: {fileID: 1939347744985526764}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: PoolBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 7788585223445710683}
   - component: {fileID: 2224078665188605040}
   - component: {fileID: 9205046478464932339}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

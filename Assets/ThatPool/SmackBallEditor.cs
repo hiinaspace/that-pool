@@ -13,6 +13,9 @@ public class SmackBallEditor : MonoBehaviour
     [Range(0,1f)]
     public float timeScale = 1f;
 
+    [Range(0, 0.1f)]
+    public float randomness;
+
     private Vector3[] positions;
     private Quaternion[] rotations;
 
@@ -46,7 +49,12 @@ public class SmackBallEditor : MonoBehaviour
 
     void Interact()
     {
-        cueBall.AddForceAtPosition(Vector3.forward * force, cueBall.transform.position + forcePosition, ForceMode.Impulse);
+        var f = Vector3.forward * force;
+        f.x = Random.Range(-randomness, randomness);
+        var p = cueBall.transform.position;
+        p.x += Random.Range(-randomness, randomness);
+        cueBall.transform.position = p;
+        cueBall.AddForceAtPosition(f, cueBall.transform.position + forcePosition, ForceMode.Impulse);
     }
 
     void OnGUI()
