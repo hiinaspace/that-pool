@@ -185,12 +185,19 @@ MonoBehaviour:
       lineChar: 4
       spanCodeSection: "{\r\n        \r\n    }\r\n    "
     - startInstruction: 28
-      endInstruction: 55
+      endInstruction: 27
       startSourceChar: 175
-      endSourceChar: 224
+      endSourceChar: 203
       line: 12
       lineChar: 4
-      spanCodeSection: "private void OnTriggerEnter(Collider other)\r\n    "
+      spanCodeSection: private void OnTriggerEnter(
+    - startInstruction: 28
+      endInstruction: 55
+      startSourceChar: 203
+      endSourceChar: 224
+      line: 12
+      lineChar: 32
+      spanCodeSection: "Collider other)\r\n    "
     - startInstruction: 56
       endInstruction: 75
       startSourceChar: 224
@@ -200,12 +207,19 @@ MonoBehaviour:
       spanCodeSection: "{\r\n        //Debug.Log($\"{other} entered\");\r\n    }\r\n\r\n
         \   "
     - startInstruction: 76
-      endInstruction: 103
+      endInstruction: 75
       startSourceChar: 282
-      endSourceChar: 330
+      endSourceChar: 309
       line: 17
       lineChar: 4
-      spanCodeSection: "private void OnTriggerExit(Collider other)\r\n    "
+      spanCodeSection: private void OnTriggerExit(
+    - startInstruction: 76
+      endInstruction: 103
+      startSourceChar: 309
+      endSourceChar: 330
+      line: 17
+      lineChar: 31
+      spanCodeSection: "Collider other)\r\n    "
     - startInstruction: 104
       endInstruction: 104
       startSourceChar: 330

@@ -1,6 +1,7 @@
 
 using UdonSharp;
 using UnityEngine;
+using VRC.SDKBase;
 
 public class PoolCue : UdonSharpBehaviour
 {
@@ -27,6 +28,8 @@ public class PoolCue : UdonSharpBehaviour
 
     void LateUpdate()
     {
+        if (!Networking.IsOwner(gameObject)) return;
+
         var leftGrip = GetLeftGrip() > 0.5;
         var rightGrip = GetRightGrip() > 0.5;
         if (leftHandEntered && leftGrip)
