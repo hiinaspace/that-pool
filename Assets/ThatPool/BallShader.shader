@@ -44,8 +44,10 @@
             if (UNITY_ACCESS_INSTANCED_PROP(Props, _IsStripe) == 1) {
                 col = lerp(col, fixed4(1, 1, 1, 1), min(IN.uv_MainTex.y, 1 - IN.uv_MainTex.y) > 0.35 ? 0 : 1);
             }
-            fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * col;
+            fixed4 tex = tex2D (_MainTex, IN.uv_MainTex);
+            fixed4 c = tex * col;
             o.Albedo = c.rgb;
+            o.Emission = 1 - tex;
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;

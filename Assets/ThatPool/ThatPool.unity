@@ -428,9 +428,9 @@ MonoBehaviour:
   cueBall: {fileID: 2087615242}
   balls: {fileID: 945738287}
   forcePosition: {x: 0, y: 0.01, z: 0}
-  force: 5
+  force: 1.94
   timeScale: 1
-  randomness: 0
+  randomness: 0.1
 --- !u!65 &391349894
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6262,25 +6262,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e10fa40d5de554087427e0d127406d, type: 3}
---- !u!1 &1175916879 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1094421957795851142, guid: 8894fa7e4588a5c4fab98453e558847d,
-    type: 3}
-  m_PrefabInstance: {fileID: 784407430}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1175916884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175916879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentType: 1
 --- !u!4 &1356851590 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1939347744985526767, guid: 03e10fa40d5de554087427e0d127406d,
